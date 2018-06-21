@@ -67,10 +67,9 @@ body {
   display: flex;
 }
 .color-result {
-  padding: 12px 13px;
+  padding: 13px 13px;
   margin-right: 10px;
   border-radius: 5px;
-  background-color: red;
 }
 .result-text {
   color: rgb(178, 183, 188);
