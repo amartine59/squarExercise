@@ -12,7 +12,6 @@ function nameForColor() {
     if (userExist(name.value)) {
       var color = getColor(name.value);
       result.style.backgroundColor = color;
-      clearTextBox();
     } else {
       var color = randomColor();
       //Setting the values to the object
@@ -25,7 +24,6 @@ function nameForColor() {
       //Store the array localy
       localStorage.setItem("users", JSON.stringify(store));
       result.style.backgroundColor = color;
-      clearTextBox();
     }
   } else {
     window.alert("You must type a name");
@@ -72,7 +70,4 @@ function getColor(name) {
       }
     }
   }
-}
-function clearTextBox() {
-  document.getElementById("user-name").value = "";
 }
