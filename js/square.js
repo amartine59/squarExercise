@@ -40,10 +40,10 @@ function squareOrRectangle(Tside, Bside, Lside, Rside) {
   }
   if (Tside == Bside && Lside == Rside && Tside != Lside) {
     if (Tside > Lside) {
-      stringResult = "It's a rectangle who's width is bigger than it's height";
+      stringResult = "It's a rectangle who's width is bigger than its height";
       return stringResult;
     } else if (Tside < Lside) {
-      stringResult = "It's a rectangle who's height is bigger than it's width ";
+      stringResult = "It's a rectangle who's height is bigger than its width ";
       return stringResult;
     }
   }
@@ -63,6 +63,7 @@ function squareOrRectangle(Tside, Bside, Lside, Rside) {
     return stringResult;
   }
 }
+
 //Displays an error if the values entered are not right
 function displayError(error) {
   document.getElementById("error-box").style.borderColor = "#cc0000";
