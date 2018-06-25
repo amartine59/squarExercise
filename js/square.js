@@ -58,7 +58,7 @@ function displayError(error) {
 
 //Display the given string on the result box
 function displayResult(result) {
-  document.getElementById("result-box").style.borderColor = "rgb(127,255,0)";
+  document.getElementById("result-box").style.borderColor = "rgb(50,205,50)";
   document.getElementById("result-box").innerHTML = result;
 }
 
