@@ -25,12 +25,13 @@ body {
   align-self: center;
   width: 550px;
   border-radius: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 25px;
 }
 .form-items {
   display: flex;
   flex-flow: column nowrap;
+  width: 100%;
+  padding: 10px;
 }
 
 .l-name {
@@ -57,10 +58,9 @@ body {
   background-color: rgb(25, 127, 235);
   color: rgb(217, 235, 253);
   height: 45px;
-  width: 355px;
   font-size: 15pt;
   font-weight: 100;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
   border: 0;
 }

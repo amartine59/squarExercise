@@ -22,7 +22,7 @@ function verifyShape() {
       }
       displayResult(result);
     } else {
-      var error = "Negative nor zero values are  allowed";
+      var error = "Negative nor zero values are allowed";
       displayError(error);
     }
   } else {
@@ -33,6 +33,7 @@ function verifyShape() {
 
 function squareOrRectangle(Tside, Bside, Lside, Rside) {
   var stringResult = "";
+  var error = "";
   if (Tside == Bside && Lside == Rside && Tside == Lside) {
     stringResult = "It's a square ";
     return stringResult;
@@ -46,9 +47,21 @@ function squareOrRectangle(Tside, Bside, Lside, Rside) {
       return stringResult;
     }
   }
-  var error = "Invalid values for a shape";
-  displayError(error);
-  return stringResult;
+  //Why are the values wrong?
+  if (Tside != Bside && Lside == Rside) {
+    error = "The top side value and the bottom one do not match";
+    displayError(error);
+    return stringResult;
+  } else if (Tside == Bside && Lside != Rside) {
+    error = "The left side value and the right one do not match";
+    displayError(error);
+    return stringResult;
+  } else if (Tside != Bside && Lside != Rside) {
+    error =
+      "The top side value and the bottom one do not match <br/> The left side value and the right one do not match";
+    displayError(error);
+    return stringResult;
+  }
 }
 //Displays an error if the values entered are not right
 function displayError(error) {
