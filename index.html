@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>A Name for a Color</title>
+  <title>Know your Squared Friends!</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/app.js"></script>
+  <script src="js/square.js"></script>
 </head>
 
 <body>
@@ -15,13 +15,21 @@
   <div class="wrapper">
     <div class="form-container">
       <div class="form-items">
-        <label for="u-name" class="l-name">Name</label>
-        <input id="user-name" name="u-name" type="text" class="t-box" placeholder="Name">
-        <input id="go-btn" class="btn" name="execute" type="button" onclick="nameForColor()" value="Get Color"></input>
+        <div id="error-box" class="error">
+
+        </div>
+        <label for="top" class="l-name">Top-side</label>
+        <input id="top-side" name="top" type="number" min="1" class="t-box" placeholder="Top side">
+        <label for="bottom" class="l-name">Bottom-side</label>
+        <input id="bottom-side" name="bottom" type="number" min="1" class="t-box" placeholder="Bottom side">
+        <label for="left" class="l-name">Left-side</label>
+        <input id="left-side" name="left" type="number" min="1" class="t-box" placeholder="Left side">
+        <label for="right" class="l-name">Right-side</label>
+        <input id="right-side" name="right" type="number" min="1" class="t-box" placeholder="Right side">
+        <input id="go-btn" class="btn" name="execute" type="button" onclick="verifyShape()" value="Verify"></input>
       </div>
-      <div class="result-box">
-        <span id="result" class="color-result"></span>
-        <span class="result-text">Color</span>
+      <div id="result-box" class="result-box">
+
       </div>
     </div>
   </div>
