@@ -5,7 +5,7 @@ function verifyShape() {
   var Bside = document.getElementById("bottom-side").value;
   var Lside = document.getElementById("left-side").value;
   var Rside = document.getElementById("right-side").value;
-
+  var result = "";
   resetResultAndErrorBox();
 
   if (
@@ -16,6 +16,7 @@ function verifyShape() {
   ) {
     if (Tside > 0 && Bside > 0 && Lside > 0 && Rside > 0) {
       var result = squareOrRectangle(Tside, Bside, Lside, Rside);
+
       if (result.trim() == "") {
         return;
       }
@@ -47,6 +48,7 @@ function squareOrRectangle(Tside, Bside, Lside, Rside) {
   }
   var error = "Invalid values for a shape";
   displayError(error);
+  return stringResult;
 }
 //Displays an error if the values entered are not right
 function displayError(error) {
