@@ -36,7 +36,7 @@ body {
 
 .l-name {
   color: rgb(113, 130, 138);
-  font-size: 15pt;
+  font-size: 13pt;
   align-self: flex-start;
   margin-bottom: 15px;
   font-weight: 100;
@@ -45,7 +45,7 @@ body {
 .t-box {
   padding-left: 20px;
   color: rgb(178, 183, 188);
-  font-size: 14pt;
+  font-size: 12pt;
   border-radius: 5px;
   margin-bottom: 10px;
   height: 45px;
@@ -78,6 +78,6 @@ body {
   text-align: center;
   color: rgb(113, 130, 138);
   border: 1px solid rgb(255, 255, 255);
-  padding: 20px;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
